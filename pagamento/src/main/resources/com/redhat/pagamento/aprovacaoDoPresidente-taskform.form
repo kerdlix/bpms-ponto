@@ -1,0 +1,23 @@
+
+<form id="587348758">
+<property name="name" value="aprovacaoDoPresidente-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="1" name="arquivoDocumento" type="Document" id="549310973">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;arquivoDocumento (arquivoDocumento)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="arquivoDocumento"/>
+<property name="outputBinding" value="arquivoDocumento"/>
+<property name="fieldClass" value="org.jbpm.document.Document"/>
+</field>
+<field position="0" name="aprovacaoDoPresidente" type="CheckBox" id="230949289">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;aprovacaoDoPresidente (aprovacaoDoPresidente)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="aprovacaoDoPresidente"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<dataHolder inputId="" name="#B29FE4" type="basicType" outId="aprovacaoDoPresidente" value="java.lang.Boolean" id="aprovacaoDoPresidente"/>
+<dataHolder inputId="arquivoDocumento" name="#FBB767" type="basicType" outId="arquivoDocumento" value="org.jbpm.document.Document" id="arquivoDocumento"/>
+</form>
