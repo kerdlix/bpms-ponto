@@ -1,0 +1,54 @@
+
+<form id="501051694">
+<property name="name" value="com.redhat.PagamentoEmCaraterDeExcecao-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="1" name="aprovacaoDoGerente" type="CheckBox" id="1158584239">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;aprovacaoDoGerente (aprovacaoDoGerente)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="aprovacaoDoGerente"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="3" name="arquivoComprovante" type="Document" id="264409043">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;arquivoComprovante (arquivoComprovante)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="arquivoComprovante"/>
+<property name="fieldClass" value="org.jbpm.document.Document"/>
+</field>
+<field position="5" name="logPrefix" type="InputText" id="2105804689">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;logPrefix (logPrefix)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="logPrefix"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="arquivoDocumento" type="Document" id="1625616574">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;arquivoDocumento (arquivoDocumento)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="arquivoDocumento"/>
+<property name="fieldClass" value="org.jbpm.document.Document"/>
+</field>
+<field position="2" name="aprovacaoDoPresidente" type="CheckBox" id="2125252529">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;aprovacaoDoPresidente (aprovacaoDoPresidente)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="aprovacaoDoPresidente"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="0" name="aprovacaoDoDiretor" type="CheckBox" id="846178624">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;aprovacaoDoDiretor (aprovacaoDoDiretor)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="aprovacaoDoDiretor"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="aprovacaoDoDiretor" value="java.lang.Boolean" id="aprovacaoDoDiretor"/>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="aprovacaoDoGerente" value="java.lang.Boolean" id="aprovacaoDoGerente"/>
+<dataHolder inputId="" name="#B29FE4" type="basicType" outId="aprovacaoDoPresidente" value="java.lang.Boolean" id="aprovacaoDoPresidente"/>
+<dataHolder inputId="" name="#A7E690" type="basicType" outId="arquivoComprovante" value="org.jbpm.document.Document" id="arquivoComprovante"/>
+<dataHolder inputId="" name="#FBB767" type="basicType" outId="arquivoDocumento" value="org.jbpm.document.Document" id="arquivoDocumento"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="logPrefix" value="java.lang.String" id="logPrefix"/>
+</form>
