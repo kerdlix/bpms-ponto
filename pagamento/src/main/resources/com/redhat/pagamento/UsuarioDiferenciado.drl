@@ -1,2 +1,52 @@
 package com.redhat.pagamento;
 
+rule "UsuarioGerente"
+
+	no-loop 
+	ruleflow-group "usuarioDiferenciado"
+	lock-on-active 
+    
+    when
+        //conditions
+        $solicitacao : Solicitacao(usuarioDiferenciado == null, emailDoSolicitante != null, emailDoSolicitante contains 'usuarioGerente')
+    then
+        //actions
+        System.out.println("Inicio da regra: " + kcontext.getRule().getName());
+        modify($solicitacao) {setUsuarioDiferenciado(true)};
+        System.out.println("Regra finalizada: " + kcontext.getRule().getName());
+
+end
+
+rule "UsuarioDiretor"
+
+	no-loop 
+	ruleflow-group "usuarioDiferenciado"
+	lock-on-active 
+    
+    when
+        //conditions
+        $solicitacao : Solicitacao(usuarioDiferenciado == null, emailDoSolicitante != null, emailDoSolicitante contains 'usuarioDiretor')
+    then
+        //actions
+        System.out.println("Inicio da regra: " + kcontext.getRule().getName());
+        modify($solicitacao) {setUsuarioDiferenciado(true)};
+        System.out.println("Regra finalizada: " + kcontext.getRule().getName());
+
+end
+
+rule "UsuarioPresidente"
+
+	no-loop 
+	ruleflow-group "usuarioDiferenciado"
+	lock-on-active 
+    
+    when
+        //conditions
+        $solicitacao : Solicitacao(usuarioDiferenciado == null, emailDoSolicitante != null, emailDoSolicitante contains 'usuarioPresidente')
+    then
+        //actions
+        System.out.println("Inicio da regra: " + kcontext.getRule().getName());
+        modify($solicitacao) {setUsuarioDiferenciado(true)};
+        System.out.println("Regra finalizada: " + kcontext.getRule().getName());
+
+end
