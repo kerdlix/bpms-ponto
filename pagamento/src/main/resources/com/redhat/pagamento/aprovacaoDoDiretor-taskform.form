@@ -3,6 +3,13 @@
 <property name="name" value="aprovacaoDoDiretor-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="aprovacaoDoDiretor" type="CheckBox" id="1426265899">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;aprovacaoDoDiretor (aprovacaoDoDiretor)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="aprovacaoDoDiretor"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
 <field position="1" name="arquivoDocumento" type="Document" id="1519447028">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;arquivoDocumento (arquivoDocumento)quot;"/>
@@ -10,13 +17,6 @@
 <property name="inputBinding" value="arquivoDocumento"/>
 <property name="outputBinding" value="arquivoDocumento"/>
 <property name="fieldClass" value="org.jbpm.document.Document"/>
-</field>
-<field position="0" name="aprovacaoDoDiretor" type="CheckBox" id="1426265899">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;aprovacaoDoDiretor (aprovacaoDoDiretor)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="aprovacaoDoDiretor"/>
-<property name="fieldClass" value="java.lang.Boolean"/>
 </field>
 <dataHolder inputId="" name="#9BCAFA" type="basicType" outId="aprovacaoDoDiretor" value="java.lang.Boolean" id="aprovacaoDoDiretor"/>
 <dataHolder inputId="arquivoDocumento" name="#FBB767" type="basicType" outId="arquivoDocumento" value="org.jbpm.document.Document" id="arquivoDocumento"/>
