@@ -1,0 +1,71 @@
+
+<form id="333954451">
+<property name="name" value="aprovacaoDoMedico-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="3" name="solicitacao_dataDaCorrecao" type="InputDate" id="1948185742">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;dataDaCorrecao (solicitacao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="solicitacao/dataDaCorrecao"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="6" name="solicitacao_listaDeEmailFinal" type="InputText" id="494776589">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;listaDeEmailFinal (solicitacao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="solicitacao/listaDeEmailFinal"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="aprovacaoDoMedico" type="CheckBox" id="1311911814">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;aprovacaoDoMedico (aprovacaoDoMedico)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="aprovacaoDoMedico"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="4" name="solicitacao_descricaoDaCorrecao" type="InputText" id="304632508">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;descricaoDaCorrecao (solicitacao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="solicitacao/descricaoDaCorrecao"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="8" name="solicitacao_nomeDoSolicitante" type="InputText" id="411343379">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;nomeDoSolicitante (solicitacao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="solicitacao/nomeDoSolicitante"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="solicitacao_emailDoSolicitante" type="InputText" id="1665661534">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;emailDoSolicitante (solicitacao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="solicitacao/emailDoSolicitante"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="7" name="solicitacao_motivoDaCorrecao" type="InputText" id="1825370614">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;motivoDaCorrecao (solicitacao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="solicitacao/motivoDaCorrecao"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="solicitacao_aprovacaoDoGerente" type="CheckBox" id="1274992789">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;aprovacaoDoGerente (solicitacao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="solicitacao/aprovacaoDoGerente"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="2" name="solicitacao_aprovacaoDoMedico" type="CheckBox" id="1188188684">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;aprovacaoDoMedico (solicitacao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="solicitacao/aprovacaoDoMedico"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="aprovacaoDoMedico" value="java.lang.Boolean" id="aprovacaoDoMedico"/>
+<dataHolder inputId="solicitacao" name="#E9E371" type="dataModelerEntry" outId="" value="com.redhat.ponto.Solicitacao" id="solicitacao"/>
+</form>
