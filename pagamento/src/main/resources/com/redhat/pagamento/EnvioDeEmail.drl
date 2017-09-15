@@ -1,2 +1,75 @@
 package com.redhat.pagamento;
 
+rule "EmailDeAprovacao"
+
+	no-loop 
+	ruleflow-group "emailDeAprovacao"
+	lock-on-active 
+    
+    when
+        //conditions
+        $solicitacao : Solicitacao(listaDeEmailFinal == null)
+    then
+        //actions
+        System.out.println("Inicio da regra: " + kcontext.getRule().getName());
+        String s = $solicitacao.getEmailDoSolicitante() + ", " + $solicitacao.getEmailInteressados() + ", usuarioGerente@redhat.com";
+        modify($solicitacao) {setListaDeEmailFinal(s)};
+        System.out.println("Regra finalizada: " + kcontext.getRule().getName());
+
+end
+
+
+rule "EmailDeRejeicao1"
+
+	no-loop 
+	ruleflow-group "emailDeRejeicao"
+	lock-on-active 
+    
+    when
+        //conditions
+        $solicitacao : Solicitacao(listaDeEmailFinal == null, aprovacaoDoGerente == false)
+    then
+        //actions
+        System.out.println("Inicio da regra: " + kcontext.getRule().getName());
+        String s = $solicitacao.getEmailDoSolicitante() + ", " + $solicitacao.getEmailInteressados();
+        modify($solicitacao) {setListaDeEmailFinal(s)};
+        System.out.println("Regra finalizada: " + kcontext.getRule().getName());
+
+end
+
+rule "EmailDeRejeicao2"
+
+	no-loop 
+	ruleflow-group "emailDeRejeicao"
+	lock-on-active 
+    
+    when
+        //conditions
+        $solicitacao : Solicitacao(listaDeEmailFinal == null, aprovacaoDoGerente == true, aprovacaoDoDiretor == false)
+    then
+        //actions
+        System.out.println("Inicio da regra: " + kcontext.getRule().getName());
+        String s = $solicitacao.getEmailDoSolicitante() + ", " + $solicitacao.getEmailInteressados() + ", usuarioGerente@redhat.com";
+        modify($solicitacao) {setListaDeEmailFinal(s)};
+        System.out.println("Regra finalizada: " + kcontext.getRule().getName());
+
+end
+
+
+rule "EmailDeRejeicao3"
+
+	no-loop 
+	ruleflow-group "emailDeRejeicao"
+	lock-on-active 
+    
+    when
+        //conditions
+        $solicitacao : Solicitacao(listaDeEmailFinal == null, aprovacaoDoGerente == true, aprovacaoDoDiretor == true)
+    then
+        //actions
+        System.out.println("Inicio da regra: " + kcontext.getRule().getName());
+        String s = $solicitacao.getEmailDoSolicitante() + ", " + $solicitacao.getEmailInteressados() + ", usuarioGerente@redhat.com, usuarioDiretor@redhat.com";
+        modify($solicitacao) {setListaDeEmailFinal(s)};
+        System.out.println("Regra finalizada: " + kcontext.getRule().getName());
+
+end
