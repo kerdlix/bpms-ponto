@@ -1,2 +1,19 @@
 package com.redhat.ponto;
 
+rule "DestinatarioDeEmail"
+
+	no-loop 
+	ruleflow-group "email"
+	lock-on-active 
+    
+    when
+        //conditions
+        $solicitacao : Solicitacao(listaDeEmailFinal == null)
+    then
+        //actions
+        System.out.println("Inicio da regra: " + kcontext.getRule().getName());
+        String s = $solicitacao.getEmailDoSolicitante() + ", usuarioGerente@redhat.com";
+        modify($solicitacao) {setListaDeEmailFinal(s)};
+        System.out.println("Regra finalizada: " + kcontext.getRule().getName());
+
+end
