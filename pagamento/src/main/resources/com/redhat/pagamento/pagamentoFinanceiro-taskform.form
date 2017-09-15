@@ -1,0 +1,24 @@
+
+<form id="2111846027">
+<property name="name" value="pagamentoFinanceiro-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="arquivoComprovante" type="Document" id="801193858">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;arquivoComprovante (arquivoComprovante)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="arquivoComprovante"/>
+<property name="outputBinding" value="arquivoComprovante"/>
+<property name="fieldClass" value="org.jbpm.document.Document"/>
+</field>
+<field position="1" name="arquivoDocumento" type="Document" id="584942358">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;arquivoDocumento (arquivoDocumento)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="arquivoDocumento"/>
+<property name="outputBinding" value="arquivoDocumento"/>
+<property name="fieldClass" value="org.jbpm.document.Document"/>
+</field>
+<dataHolder inputId="arquivoComprovante" name="#A7E690" type="basicType" outId="arquivoComprovante" value="org.jbpm.document.Document" id="arquivoComprovante"/>
+<dataHolder inputId="arquivoDocumento" name="#FBB767" type="basicType" outId="arquivoDocumento" value="org.jbpm.document.Document" id="arquivoDocumento"/>
+</form>
