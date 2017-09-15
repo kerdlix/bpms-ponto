@@ -1,95 +1,65 @@
 
-<form id="311566747">
+<form id="1636524190">
 <property name="name" value="com.redhat.SolicitacaoCorrecaoPonto-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="11" name="usuarioOwner" type="InputText" id="1785341307">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;usuarioOwner (usuarioOwner)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="usuarioOwner"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="1" name="aprovacaoDoMedico" type="CheckBox" id="762761796">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;aprovacaoDoMedico (aprovacaoDoMedico)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="aprovacaoDoMedico"/>
-<property name="fieldClass" value="java.lang.Boolean"/>
-</field>
-<field position="0" name="aprovacaoDoGerente" type="CheckBox" id="474889101">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;aprovacaoDoGerente (aprovacaoDoGerente)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="aprovacaoDoGerente"/>
-<property name="fieldClass" value="java.lang.Boolean"/>
-</field>
-<field position="6" name="solicitacao_descricaoDaCorrecao" type="InputText" id="1596821310">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;descricaoDaCorrecao (solicitacao)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitacao/descricaoDaCorrecao"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="4" name="solicitacao_aprovacaoDoMedico" type="CheckBox" id="1217410740">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;aprovacaoDoMedico (solicitacao)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitacao/aprovacaoDoMedico"/>
-<property name="fieldClass" value="java.lang.Boolean"/>
-</field>
-<field position="9" name="solicitacao_motivoDaCorrecao" type="InputText" id="548226217">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;motivoDaCorrecao (solicitacao)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitacao/motivoDaCorrecao"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="8" name="solicitacao_listaDeEmailFinal" type="InputText" id="1071263821">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;listaDeEmailFinal (solicitacao)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitacao/listaDeEmailFinal"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="5" name="solicitacao_dataDaCorrecao" type="InputDate" id="154590191">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;dataDaCorrecao (solicitacao)quot;"/>
+<field position="2" name="solicitacao_dataDaCorrecao" type="InputDate" id="557409373">
+<property name="fieldRequired" value="true"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Data da Correçãoquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="solicitacao/dataDaCorrecao"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="2" name="logPrefix" type="InputText" id="1226746034">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;logPrefix (logPrefix)quot;"/>
+<field position="4" name="solicitacao_descricaoDaCorrecao" type="InputTextArea" id="1989494452">
+<property name="fieldRequired" value="true"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Descrição Detalhada da Correçãoquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="logPrefix"/>
+<property name="outputBinding" value="solicitacao/descricaoDaCorrecao"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="3" name="solicitacao_aprovacaoDoGerente" type="CheckBox" id="1394729565">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;aprovacaoDoGerente (solicitacao)quot;"/>
+<field position="1" name="solicitacao_emailDoSolicitante" type="InputText" id="802334843">
+<property name="fieldRequired" value="true"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Email do Solicitantequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitacao/aprovacaoDoGerente"/>
-<property name="fieldClass" value="java.lang.Boolean"/>
-</field>
-<field position="10" name="solicitacao_nomeDoSolicitante" type="InputText" id="155049328">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;nomeDoSolicitante (solicitacao)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitacao/nomeDoSolicitante"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="7" name="solicitacao_emailDoSolicitante" type="InputText" id="658699821">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;emailDoSolicitante (solicitacao)quot;"/>
-<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="outputBinding" value="solicitacao/emailDoSolicitante"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="aprovacaoDoGerente" value="java.lang.Boolean" id="aprovacaoDoGerente"/>
-<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="aprovacaoDoMedico" value="java.lang.Boolean" id="aprovacaoDoMedico"/>
+<field position="3" name="solicitacao_motivoDaCorrecao" type="InputText" id="1104640829">
+<property name="fieldRequired" value="true"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Motivo da Correçãoquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="rangeFormula" value="{medico,Atestado Médico;cracha,Esquecimento de Crachá;ponto,Esquecimento de Registro de Ponto;defeito,Equipamento com Defeito}"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="outputBinding" value="solicitacao/motivoDaCorrecao"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="solicitacao_nomeDoSolicitante" type="InputText" id="1546485613">
+<property name="fieldRequired" value="true"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Nome do Solicitantequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="outputBinding" value="solicitacao/nomeDoSolicitante"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
 <dataHolder inputId="" name="#FF54A7" type="basicType" outId="logPrefix" value="java.lang.String" id="logPrefix"/>
 <dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="solicitacao" value="com.redhat.ponto.Solicitacao" id="solicitacao"/>
-<dataHolder inputId="" name="#B29FE4" type="basicType" outId="usuarioOwner" value="java.lang.String" id="usuarioOwner"/>
 </form>

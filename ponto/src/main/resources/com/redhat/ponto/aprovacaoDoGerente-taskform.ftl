@@ -48,19 +48,8 @@
 	function taskFormValidator() {
 		var i=0;
 		var myInputs = new Array();
-					myInputs[i] = document.getElementById("aprovacaoDoGerente");
-					i++;
-
 
 		var j=0;
-						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
-							alert("Please enter valid aprovacaoDoGerente");
-							myInputs[j].focus();
-							return false;
-						}
-			
-					j++;
-
 		return true;
 	}
 </script>
@@ -236,22 +225,11 @@
 
 		<fieldset>
             <legend>Task Inputs</legend>
-                            		<label for="name">solicitacao</label>
-                            		<div class="div_checkbox">
-                              		${solicitacao}
-                            		</div>
-
             <div class="clear"></div>
           </fieldset>
 
           <fieldset>
             <legend>Task Outputs</legend>
-                            		<label for="name">aprovacaoDoGerente</label>
-                            		<div class="div_checkbox">
-                              		<input name="aprovacaoDoGerente" type="checkbox" class="checkbox" id="aprovacaoDoGerente" value="${aprovacaoDoGerente}" />
-                            		</div>
-              	
-
           </fieldset>
 	</div>
 	<div id="footer">
